@@ -38,7 +38,7 @@ flatpak install -y com.mojang.Minecraft \
                   com.valvesoftware.Steam \
                   com.vscodium.codium \
                   io.github.shiftey.Desktop \
-                  org.filezillaproject.Filezilla \ # Any alternative would be awesome!
+                  org.filezillaproject.Filezilla \
                   org.sqlitebrowser.sqlitebrowser \
                   com.github.tchx84.Flatseal \
                   org.gnome.Calculator \
