@@ -16,7 +16,7 @@ dnf5 -y remove \
 
 
 # Install Apps
-dnf -y install gnome-tweaks gnome-extensions-app vlc
+dnf -y install gnome-tweaks gnome-extensions-app
 
 # Install Gnome Extensions
 dnf -y install gnome-shell-extension-appindicator \
@@ -27,10 +27,6 @@ dnf -y install gnome-shell-extension-appindicator \
 
 # Install codecs
 dnf -y swap ffmpeg-free ffmpeg --allowerasing
-#dnf -y update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-#dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-#dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-dnf -y install libva-intel-driver rpmfusion-free-release-tainted libdvdcssc #libva-nvidia-driver
 
 # Setup flatpak apps
 flatpak -y install com.mojang.Minecraft \
@@ -39,5 +35,10 @@ flatpak -y install com.mojang.Minecraft \
                   com.vscodium.codium \
                   io.github.shiftey.Desktop \
                   org.filezillaproject.Filezilla \ # Any alternative would be awesome!
-                  org.sqlitebrowser.sqlitebrowser
+                  org.sqlitebrowser.sqlitebrowser \
+                  com.github.tchx84.Flatseal \
+                  org.gnome.Calculator \
+                  org.gnome.Loupe \
+                  org.gnome.TextEditor \
+                  org.gnome.Totem
 
