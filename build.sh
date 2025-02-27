@@ -28,22 +28,8 @@ dnf -y install gnome-shell-extension-appindicator \
 # Install codecs
 dnf -y swap ffmpeg-free ffmpeg --allowerasing
 
+
+RUN pip install --prefix=/usr yafti
 systemctl enable yafti.service
 
-# Setup flatpak apps
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-modify --no-filter --enable flathub
-#flatpak install -y --reinstall flathub $(flatpak list --app-runtime=org.fedoraproject.Platform --columns=application | tail -n +1 )
-#flatpak remote-delete fedora
-flatpak install -y org.mozilla.firefox \
-                  com.valvesoftware.Steam \
-                  com.vscodium.codium \
-                  io.github.shiftey.Desktop \
-                  org.filezillaproject.Filezilla \
-                  org.sqlitebrowser.sqlitebrowser \
-                  com.github.tchx84.Flatseal \
-                  org.gnome.Calculator \
-                  org.gnome.Loupe \
-                  org.gnome.TextEditor \
-                  org.gnome.Totem
 
