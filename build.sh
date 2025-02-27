@@ -27,7 +27,7 @@ dnf -y install gnome-shell-extension-appindicator \
 
 # Install codecs
 dnf -y swap ffmpeg-free ffmpeg --allowerasing
-dnf -y update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+#dnf -y update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 #dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 #dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 dnf -y install libva-intel-driver rpmfusion-free-release-tainted libdvdcssc #libva-nvidia-driver
