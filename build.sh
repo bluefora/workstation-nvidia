@@ -29,6 +29,6 @@ dnf -y install gnome-shell-extension-appindicator \
 dnf -y swap ffmpeg-free ffmpeg --allowerasing
 
 
-systemctl enable yafti.service
+#systemctl enable yafti.service
 
 
