@@ -1,8 +1,0 @@
-[Unit]
-Description=Yafti First Run
-
-[Service]
-ExecStart=/usr/local/bin/firstrun.sh
-
-[Install]
-WantedBy=multi-user.target
