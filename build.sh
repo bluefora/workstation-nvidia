@@ -16,19 +16,18 @@ dnf5 -y remove \
 
 
 # Install Apps
-dnf -y install gnome-tweaks gnome-extensions-app
+dnf5 -y install gnome-tweaks gnome-extensions-app
 
 # Install Gnome Extensions
-dnf -y install gnome-shell-extension-appindicator \
+dnf5 -y install gnome-shell-extension-appindicator \
               gnome-shell-extension-blur-my-shell \
               gnome-shell-extension-caffeine \
               gnome-shell-extension-dash-to-panel \
               gnome-shell-extension-just-perfection \
 
 # Install codecs
-dnf -y swap ffmpeg-free ffmpeg --allowerasing
+dnf5 -y swap ffmpeg-free ffmpeg --allowerasing
 
 
-#systemctl enable yafti.service
 
 
