@@ -29,5 +29,10 @@ dnf5 -y install gnome-shell-extension-appindicator \
 dnf5 -y swap ffmpeg-free ffmpeg --allowerasing
 
 
+# Swap flatpak repos
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-modify --no-filter --enable flathub
+
+dnf5 -y install zenity
 
 
