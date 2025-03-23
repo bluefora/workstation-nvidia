@@ -15,7 +15,7 @@ FROM ghcr.io/ublue-os/silverblue-nvidia:latest
 
 COPY build.sh /tmp/build.sh
 
-COPY files /
+COPY rootcopy /
 #RUN pip install --prefix=/usr yafti
 
 RUN mkdir -p /var/lib/alternatives && \
