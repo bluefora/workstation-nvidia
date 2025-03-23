@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # Update release file
 sed -i -e 's/ID=silverblue/ID=workstation-nvidia/g' /usr/lib/os-release
-sed -i -e 's/Silverblue/CarbonCopy/g' /usr/lib/os-release 
+sed -i -e 's/Silverblue/CarbonOs/g' /usr/lib/os-release 
 
 # Cleanup
 dnf5 -y remove \
