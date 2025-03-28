@@ -10,8 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Update release file
-sed -i -e 's/ID=silverblue/ID=workstation-nvidia/g' /usr/lib/os-release
-sed -i -e 's/Silverblue/Carbonux/g' /usr/lib/os-release 
+sed -i -e 's/ID=silverblue/ID=workstation/g' /usr/lib/os-release
+sed -i -e 's/Silverblue/Bluefora/g' /usr/lib/os-release
+sed -i -e 's/Fedora Linux 41 (Workstation Edition)/Bluefora Linux 41 (Workstation Edition)/g' /usr/lib/os-release
+sed -i -e 's/DEFAULT_HOSTNAME="fedora"/DEFAULT_HOSTNAME="bluefora"/g' /usr/lib/os-release
 
 # Cleanup
 dnf5 -y remove \

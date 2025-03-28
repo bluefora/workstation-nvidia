@@ -8,16 +8,16 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 If you are comming from another build like silverblue first rebase to the unsigned image, to get the proper signing keys and policies installed:
 
-`rpm-ostree rebase ostree-unverified-registry:ghcr.io/carbonux/workstation-nvidia:latest`
+`rpm-ostree rebase ostree-unverified-registry:ghcr.io/bluefora/workstation-nvidia:latest`
 
 Reboot to complete the rebase:
 
 `systemctl reboot`
 
-If you are on any Carbonux build or rebased to unsigned from another buid (see above).
+If you are on any Bluefora build or rebased to unsigned from another buid (see above).
 Rebase to the signed image, like so:
 
-`rpm-ostree rebase ostree-image-signed:docker://ghcr.io/carbonux/workstation-nvidia:latest`
+`rpm-ostree rebase ostree-image-signed:docker://ghcr.io/bluefora/workstation-nvidia:latest`
 
 Reboot again to complete the installation
 
@@ -25,10 +25,10 @@ Reboot again to complete the installation
 
 
 # Basic version without nvidia
-`rpm-ostree rebase ostree-unverified-registry:ghcr.io/carbonux/workstation:latest`
+`rpm-ostree rebase ostree-unverified-registry:ghcr.io/bluefora/workstation:latest`
 `systemctl reboot`
 
 # Developer version without nvidia
-`rpm-ostree rebase ostree-unverified-registry:ghcr.io/carbonux/developer:latest`
+`rpm-ostree rebase ostree-unverified-registry:ghcr.io/bluefora/developer:latest`
 `systemctl reboot`
 
